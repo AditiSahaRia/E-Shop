@@ -11,9 +11,11 @@ app.use(cookieParser());
 
 const product = require("./routes/product_routes");
 const user = require("./routes/user_routes");
+const order = require("./routes/order_routes");
 
 app.use("/api/v1", product);
 app.use("/api/v1", user);
+app.use("/api/v1", order);
 
 // Middleware for Error handling
 
