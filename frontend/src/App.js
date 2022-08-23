@@ -39,8 +39,6 @@ import ProcessOrder from "./component/Admin/ProcessOrder";
 import UsersList from "./component/Admin/UsersList";
 import UpdateUser from "./component/Admin/UpdateUser";
 import ProductReviews from "./component/Admin/ProductReviews";
-import Contact from "./component/layout/Contact/Contact";
-//import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound";
 
 function App() {
@@ -88,9 +86,7 @@ function App() {
 
         <Route exact path="/search" component={Search} />
 
-        <Route exact path="/contact" component={Contact} />
-
-        {/* <Route exact path="/about" component={About} /> */}
+        
 
         <ProtectedRoute exact path="/account" component={Profile} />
 
